@@ -1,4 +1,4 @@
-# Crowd_Counting_Model
+# Crowd Counting CNN Model
 
 ## Overview
 The purpose of this repository is to create a simple crowd counting model.
