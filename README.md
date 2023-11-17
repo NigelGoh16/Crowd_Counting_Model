@@ -9,27 +9,24 @@ Convolutional Neural Network represents the model that was implemented in this p
 
 ## Installation
 For model training, the libraries, framework and packages used can be found in the jupyter notebook and be retrieved with the following command.
-'''
+```
 ! wget "https://raw.githubusercontent.com/NigelGoh16/Crowd_Counting_Model/main/Crowd_Counting.ipynb"
-'''
+```
 
 ## Usage
 To use the simple CNN model that was trained in this repository, use the following command to retrieve the model and the preprocessing function.
-'''
+```
 ! wget "https://raw.githubusercontent.com/NigelGoh16/Crowd_Counting_Model/main/crowd_counting_simpleCNN.h5"
 ! wget "https://raw.githubusercontent.com/NigelGoh16/Crowd_Counting_Model/main/functions.py"
-'''
+```
 Use the following commands to perform crowd counting with images.
-'''
+```
 from functions import preprocess, pred_and_plot
-import matplotlib.image as mpimg
-import os
-import tensorflow as tf
 
 image_path = "Please fill in your image path here"
-model = tf.keras.models.load_model("/content/model.h5")
+model = tf.keras.models.load_model("crowd_counting_simpleCNN.h5")
 pred_and_plot(image_path, model)
-'''
+```
 
 ## Datasets
 List the datasets used in the repository for crowd counting experiments. Include details such as dataset name, brief description, citation information, and download links if available.
